@@ -16,8 +16,6 @@ install:
   - cd $my_github
 
 script: 
-  - g++ -v
   - qmake
-  - make
-  #- make --silent
+  - make --silent
   - ./travis_qmake_gcc_cpp17_magic_enum
