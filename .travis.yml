@@ -3,6 +3,9 @@ dist: bionic
 compiler: gcc
 
 install:
+  # GCC
+  - apt search g++
+  - sudo apt install g++-9
   # magic_enum
   - my_github=${PWD##*/}  
   - cd ..
